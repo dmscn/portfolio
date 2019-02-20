@@ -1,0 +1,13 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.autoIndent": true,
+
+  "prettier.eslintIntegration": true,
+  "prettier.endOfLine": "auto",
+  "prettier.semi": true,
+  "prettier.arrowParens": "always",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5"
+}
