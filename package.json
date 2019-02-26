@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "public/index.html",
+  "homepage": "https://dmscn.github.io/portfolio",
+  "author": "Leonardo Damasceno <ldamasceno.dev@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmscn/portfolio.git"
+  },
+  "keywords": [
+    "vue",
+    "portfolio"
+  ],
+  "scripts": {
+    "test": "jest --bail"
+  },
+  "dependencies": {
+    "vue": "^2.6.7"
+  }
+}
