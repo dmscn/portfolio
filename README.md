@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # portolio
 
 ## Project setup
@@ -29,3 +30,8 @@ npm run test
 ```
 npm run lint
 ```
+=======
+# Personal Portifolio
+
+#### Available [here](https://dmscn.githubio.com/portfolio)
+>>>>>>> f53176462c606c2843d788818d475b96e8513b17
