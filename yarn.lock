@@ -1326,6 +1326,14 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-native@*":
+  version "0.57.63"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.57.63.tgz#56cc7e6426ffe8e3d149c86d3396496370a75396"
+  integrity sha512-viAtvjgb/6cn4gu7eEUhTxhlYZ8oOG+1OdHznWac1BgbiPEGcDmamnW/+KZR9gRjsXY9qZY+nfyzVjcwhYmlkw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@16.8.20":
   version "16.8.20"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.20.tgz#4f633ecbd0a4d56d0ccc50fff6f9321bbcd7d583"
@@ -1334,10 +1342,35 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/rebass@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/rebass/-/rebass-3.0.4.tgz#c21ef30895d857a3bb0822084440739f448159d6"
+  integrity sha512-qTR46x+9niOIxOZJ/R0voBKes2YQb2wndC7kMLDuQ9baRB+3RO04tKF90y9jt/bEvD1gIMPaAsuKN/zqrekZOw==
+  dependencies:
+    "@types/react" "*"
+    "@types/styled-components" "*"
+    "@types/styled-system" "*"
+
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
+
+"@types/styled-components@*":
+  version "4.1.16"
+  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.1.16.tgz#63fb33d02bc41d70a3af88711849b6df5d2a58e0"
+  integrity sha512-h4VtEopz0AS2oAbZlVSG1gnEhvx0LXcmYn9jD/y8Z/OHimsQygYFeDPbUDH/rJOaQu3T+PgAgRtOTG2IZyUTVg==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+    csstype "^2.2.0"
+
+"@types/styled-system@*":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-4.2.1.tgz#dc03af329452b5208aba9dc56fdfc6971b9ed2d0"
+  integrity sha512-4wARGJuZz1DzogmGAKhOviaDeZYfOU29ROt/XrWSFTKhTNSpMvq7WyzEUuxPRC70VH57eUB1uxsWrKYND/FgJQ==
+  dependencies:
+    csstype "^2.6.4"
 
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2":
   version "2.0.3"
@@ -3207,7 +3240,7 @@ cssstyle@^1.0.0, cssstyle@^1.1.1:
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.2.0:
+csstype@^2.2.0, csstype@^2.6.4:
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.5.tgz#1cd1dff742ebf4d7c991470ae71e12bb6751e034"
   integrity sha512-JsTaiksRsel5n7XwqPAfB0l3TFKdpjW/kgAELf9vrb5adGA7UCPLajKK5s3nFrcFm3Rkyp/Qkgl73ENc1UY3cA==
@@ -8681,6 +8714,13 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
+rebass@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/rebass/-/rebass-3.1.1.tgz#b318d2f4ed1bb35532392a97e0984474f160122a"
+  integrity sha512-c/mFtt5luxoVHwsRSx5sD27DzLoEIO1gQKSal1RPsj+cf4jfkei3l00eULTm2HA0er0r8fRNZJKTE8AJVc+GRQ==
+  dependencies:
+    styled-system "^4.0.8"
+
 recursive-readdir@2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/recursive-readdir/-/recursive-readdir-2.2.2.tgz#9946fb3274e1628de6e36b2f6714953b4845094f"
@@ -9688,6 +9728,14 @@ styled-components@^4.3.1:
     stylis-rule-sheet "^0.0.10"
     supports-color "^5.5.0"
 
+styled-system@^4.0.8:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-4.2.4.tgz#8909f91396c30b92295b4eddec5f7b89f8c8d767"
+  integrity sha512-44X7n09gDvwx7yjquEXsjiNALK0dxGgAJdpO5cb/PdL+D4mhSLKWig4/EhH4vHJLbwu/kumURHyvKxygaBfg0A==
+  dependencies:
+    "@babel/runtime" "^7.4.2"
+    prop-types "^15.7.2"
+
 stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
@@ -9770,11 +9818,6 @@ table@^5.2.3:
     lodash "^4.17.11"
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
-
-tachyons@^4.11.1:
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/tachyons/-/tachyons-4.11.1.tgz#4e3666e7299e47aea7d820e0580dd4dc07cf3feb"
-  integrity sha512-n5zIZ8i8kZ8vz05vX1BdvkP8b9ufsMeSRmdqTuUtz5rlNxr03nntiZMc/HTADIsPYZj/wZJDJglxV0/yvvaiZA==
 
 tapable@^1.0.0, tapable@^1.1.0:
   version "1.1.3"
