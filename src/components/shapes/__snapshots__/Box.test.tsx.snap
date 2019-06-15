@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Box /> renders center 1`] = `ShallowWrapper {}`;
+
+exports[`<Box /> renders default 1`] = `ShallowWrapper {}`;
+
+exports[`<Box /> renders default full center 1`] = `ShallowWrapper {}`;
+
+exports[`<Box /> renders full 1`] = `ShallowWrapper {}`;
