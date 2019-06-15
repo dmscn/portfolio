@@ -3,7 +3,7 @@ import Box from '../../components/shapes/Box'
 
 export default function WorkInProgressPage() {
   return (
-    <Box>
+    <Box center full>
       <Title>Work In Progress</Title>
     </Box>
   )

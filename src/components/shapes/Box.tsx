@@ -1,25 +1,43 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import styled from 'styled-components'
 // @ts-ignore
-import { layout } from 'styled-system'
-export interface BoxProps {
-  children?: ReactNode
-}
+import { layout, color, flexbox, ColorProps } from 'styled-system'
 
-// preparando BaseBox para receber style props
-const BaseBox = styled('div')(layout)
+const BaseBox = styled('div')(layout, flexbox)
 
-// style props ordenadas por variants
-const variants = {
+const styles = {
+  base: {
+    display: 'flex',
+  },
   // takes full viewport
   full: {
-    display: 'flex',
     minHeight: '100vh',
     maxWidth: '100vw',
   },
+  // center the objects
+  center: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 }
 
-// componente com variant dinamica e outras props
-const Box = styled(BaseBox).attrs(variants.full)<BoxProps>``
+export interface BoxProps {
+  children?: ReactNode
+  center?: boolean
+  full?: boolean
+}
+
+type Props = BoxProps & ColorProps
+
+const Box = styled(BaseBox).attrs((props: Props) => {
+  const { center, full } = props
+  return {
+    ...styles.base,
+    ...(full && styles.full),
+    ...(center && styles.center),
+  }
+})<Props>`
+  ${color}
+`
 
 export default Box
