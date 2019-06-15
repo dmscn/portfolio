@@ -5,8 +5,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "format": "prettier --write \"src/**/*.{ts|tx}\"",
-    "lint": "eslint \"**/*.{ts|tx}\" --quiet",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "lint": "eslint \"**/*.{ts,tsx}\" --quiet",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -19,7 +19,7 @@
   "lint-staged": {
     "*.{js,tsx}": [
       "yarn format",
-      "yarn lint -- --fix",
+      "yarn lint --fix",
       "git add"
     ]
   },
@@ -57,7 +57,8 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "husky": "^2.4.1",
     "lint-staged": "^8.2.1",
     "prettier": "^1.18.2"
