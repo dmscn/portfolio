@@ -1,12 +1,16 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
+// @ts-ignore
+import Typing from 'react-typing-animation'
+
 import Box from '../../components/shapes/Box'
 
 export default function WorkInProgressPage() {
   return (
     <Box center full>
-      <Title>Work In Progress</Title>
+      <Typing loop>
+        <h1>Work in Progress...</h1>
+        <Typing.Reset count={1} delay={1500} />
+      </Typing>
     </Box>
   )
 }
-
-const Title = (props: { children: ReactNode }) => <h1>{props.children}</h1>
