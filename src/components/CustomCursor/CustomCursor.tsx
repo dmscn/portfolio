@@ -19,7 +19,7 @@ const CursorSpan = styled.span<CursorProps>`
   color: ${props => props.color || 'black'};
   font-size: 1em;
   padding-left: 2px;
-  animation: ${blink} 1s step-end infinite;
+  animation: ${blink} 600ms step-end infinite;
 `
 
 const CustomCursor = (props: CursorProps) => (
