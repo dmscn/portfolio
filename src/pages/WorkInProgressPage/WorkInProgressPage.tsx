@@ -8,8 +8,9 @@ export default function WorkInProgressPage() {
   return (
     <Box center full>
       <Typing loop>
+        <Typing.Delay ms={50} />
         <h1>Work in Progress...</h1>
-        <Typing.Reset count={1} delay={2000} />
+        <Typing.Backspace count={20} delay={1500} speed={25} />
       </Typing>
     </Box>
   )
