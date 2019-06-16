@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dmscn.github.io/portfolio/",
+  "homepage": "https://dmscn.dev/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
