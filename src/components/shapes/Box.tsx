@@ -19,22 +19,28 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  // flex column
+  column: {
+    flexDirection: 'column',
+  },
 }
 
 export interface BoxProps {
   children?: ReactNode
   center?: boolean
   full?: boolean
+  column?: boolean
 }
 
 type Props = BoxProps & ColorProps
 
 const Box = styled(BaseBox).attrs((props: Props) => {
-  const { center, full } = props
+  const { center, full, column } = props
   return {
     ...styles.base,
     ...(full && styles.full),
     ...(center && styles.center),
+    ...(column && styles.column),
   }
 })<Props>`
   ${color}
