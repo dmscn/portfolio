@@ -7,7 +7,7 @@ import CustomCursor from '../../components/CustomCursor'
 
 export default function WorkInProgressPage() {
   return (
-    <Box center full column bg="black" color="white">
+    <Box center full column color="white">
       <Typing loop cursor={<CustomCursor color="white" />}>
         <Typing.Delay ms={50} />
         <h1>Work in Progress...</h1>
