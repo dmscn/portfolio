@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
+import { Router, navigate } from '@reach/router'
+
 import theme from './assets/theme'
 import WorkInProgressPage from './pages/WorkInProgressPage'
 
@@ -46,10 +48,19 @@ const App: React.FC = () => {
     }
   }, [])
 
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'production') {
+      navigate('/workinprogress')
+    }
+    navigate('/workinprogress')
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <div id="background">
-        <WorkInProgressPage />
+        <Router>
+          <WorkInProgressPage path="/workinprogress" />
+        </Router>
       </div>
     </ThemeProvider>
   )
