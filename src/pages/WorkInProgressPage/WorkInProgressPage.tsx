@@ -1,11 +1,11 @@
 import React from 'react'
-// @ts-ignore
 import Typing from 'react-typing-animation'
+import { RouteComponentProps } from '@reach/router'
 
 import Box from '../../components/shapes/Box'
 import CustomCursor from '../../components/CustomCursor'
 
-export default function WorkInProgressPage() {
+export default function WorkInProgressPage(props: RouteComponentProps) {
   return (
     <Box center full column color="white">
       <Typing loop cursor={<CustomCursor color="white" />}>
