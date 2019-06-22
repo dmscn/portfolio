@@ -4,6 +4,7 @@ import { Router, navigate } from '@reach/router'
 
 import theme from './assets/theme'
 import WorkInProgressPage from './pages/WorkInProgressPage'
+import HomePage from './pages/HomePage'
 
 const ThreeCDN =
   'https://cdn.jsdelivr.net/gh/tengbao/vanta/vendor/three.r92.min.js'
@@ -52,13 +53,13 @@ const App: React.FC = () => {
     if (process.env.NODE_ENV === 'production') {
       navigate('/workinprogress')
     }
-    navigate('/workinprogress')
   }, [])
 
   return (
     <ThemeProvider theme={theme}>
       <div id="background">
         <Router>
+          <HomePage path="/" />
           <WorkInProgressPage path="/workinprogress" />
         </Router>
       </div>
