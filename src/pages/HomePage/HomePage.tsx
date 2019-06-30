@@ -9,21 +9,22 @@ import Text from '../../components/Text'
 const HomePage = (props: RouteComponentProps) => {
   const techs = ['JavaScript', 'ES8', 'React', 'Angular', 'Vue.js']
 
+  const techsJSX = techs.map(tech => (
+    <>
+      <Text variant="title" light>
+        {tech}
+      </Text>
+      <Typing.Backspace count={tech.length} delay={1500} speed={25} />
+    </>
+  ))
+
   return (
     <Box full center column>
       <Text variant="heading" light>
         hello, i'm Leo
       </Text>
       <Typing loop cursor={<CustomCursor color="white" />}>
-        <Typing.Delay ms={50} />
-        {techs.map(tech => (
-          <>
-            <Text variant="title" light>
-              {tech}
-            </Text>
-            <Typing.Backspace count={tech.length} delay={1500} speed={25} />
-          </>
-        ))}
+        {techsJSX}
       </Typing>
     </Box>
   )

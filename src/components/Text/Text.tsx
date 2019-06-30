@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 // @ts-ignore
 import { layout, color, typography } from 'styled-system'
@@ -27,6 +26,7 @@ const styles = {
 }
 
 export interface TextProps {
+  children: string
   light?: boolean
   variant?: 'body' | 'title' | 'subtitle' | 'heading'
 }
