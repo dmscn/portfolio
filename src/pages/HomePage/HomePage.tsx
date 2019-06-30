@@ -2,12 +2,14 @@ import React from 'react'
 import { RouteComponentProps } from '@reach/router'
 import Typing from 'react-typing-animation'
 
+import Layout from '../../assets/theme/layout'
+
 import Box from '../../components/shapes/Box'
 import CustomCursor from '../../components/CustomCursor'
 import Text from '../../components/Text'
 
 const HomePage = (props: RouteComponentProps) => {
-  const techs = ['JavaScript', 'ES8', 'React', 'Angular', 'Vue.js']
+  const techs = ['JavaScript', 'React']
 
   const techsJSX = techs.map(tech => (
     <>
@@ -23,9 +25,11 @@ const HomePage = (props: RouteComponentProps) => {
       <Text variant="heading" light>
         hello, i'm Leo
       </Text>
-      <Typing loop cursor={<CustomCursor color="white" />}>
-        {techsJSX}
-      </Typing>
+      <Box mt={Layout.margin.small}>
+        <Typing loop cursor={<CustomCursor color="white" />}>
+          {techsJSX}
+        </Typing>
+      </Box>
     </Box>
   )
 }

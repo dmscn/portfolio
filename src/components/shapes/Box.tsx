@@ -1,7 +1,15 @@
 import { ReactNode } from 'react'
 import styled from 'styled-components'
-// @ts-ignore
-import { layout, color, flexbox, ColorProps } from 'styled-system'
+import {
+  // @ts-ignore
+  layout,
+  color,
+  // @ts-ignore
+  flexbox,
+  ColorProps,
+  space,
+  SpaceProps,
+} from 'styled-system'
 
 const BaseBox = styled('div')(layout, flexbox)
 
@@ -32,7 +40,7 @@ export interface BoxProps {
   column?: boolean
 }
 
-type Props = BoxProps & ColorProps
+type Props = BoxProps & ColorProps & SpaceProps
 
 const Box = styled(BaseBox).attrs((props: Props) => {
   const { center, full, column } = props
@@ -44,6 +52,7 @@ const Box = styled(BaseBox).attrs((props: Props) => {
   }
 })<Props>`
   ${color}
+  ${space}
 `
 
 export default Box
