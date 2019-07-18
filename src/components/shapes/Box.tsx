@@ -6,6 +6,8 @@ import {
   color,
   // @ts-ignore
   flexbox,
+  // @ts-ignore,
+  FlexboxProps,
   ColorProps,
   space,
   SpaceProps,
@@ -40,7 +42,7 @@ export interface BoxProps {
   column?: boolean
 }
 
-type Props = BoxProps & ColorProps & SpaceProps
+type Props = BoxProps & ColorProps & SpaceProps & FlexboxProps
 
 const Box = styled(BaseBox).attrs((props: Props) => {
   const { center, full, column } = props

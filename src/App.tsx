@@ -49,12 +49,6 @@ const App: React.FC = () => {
     }
   }, [])
 
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      navigate('/workinprogress')
-    }
-  }, [])
-
   return (
     <ThemeProvider theme={theme}>
       <div id="background">
