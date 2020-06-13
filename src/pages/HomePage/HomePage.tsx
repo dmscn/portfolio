@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import { RouteComponentProps } from '@reach/router'
 import Typing from 'react-typing-animation'
 
@@ -9,7 +9,7 @@ import CustomCursor from '../../components/CustomCursor'
 import Text from '../../components/Text'
 import Button from '../../components/Button'
 
-const HomePage = (props: RouteComponentProps) => {
+const HomePage: FunctionComponent<RouteComponentProps> = () => {
   const techs = [
     'JavaScript',
     'React',
@@ -33,12 +33,12 @@ const HomePage = (props: RouteComponentProps) => {
   ]
 
   const techsJSX = techs.map(tech => (
-    <>
+    <React.Fragment key={tech}>
       <Text variant="title" light>
         {tech}
       </Text>
       <Typing.Backspace count={tech.length} delay={1500} speed={25} />
-    </>
+    </React.Fragment>
   ))
 
   return (
