@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { Router, navigate } from '@reach/router'
+import { Router } from '@reach/router'
 
 import theme from './assets/theme'
 import WorkInProgressPage from './pages/WorkInProgressPage'
 import HomePage from './pages/HomePage'
 
 const ThreeCDN =
-  'https://cdn.jsdelivr.net/gh/tengbao/vanta/vendor/three.r92.min.js'
+  'https://cdnjs.cloudflare.com/ajax/libs/three.js/r92/three.min.js'
 
 const VantaNetCDN =
-  'https://cdn.jsdelivr.net/gh/tengbao/vanta/dist/vanta.net.min.js'
+  'https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.net.min.js'
 
 function loadScript(src: string) {
   return new Promise((resolve, reject) => {
