@@ -52,7 +52,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <div id="background">
-        <Router>
+        <Router basepath="/portfolio">
           <HomePage path="/" />
           <WorkInProgressPage path="/workinprogress" />
         </Router>
