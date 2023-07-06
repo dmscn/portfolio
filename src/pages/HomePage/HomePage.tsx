@@ -56,7 +56,7 @@ const HomePage: FunctionComponent<RouteComponentProps> = () => {
       <Box center flex={1}>
         <Button
           variant="link"
-          href="./leonardo_damasceno.pdf"
+          href="./resume.pdf"
           target="_blank"
           download
         >
