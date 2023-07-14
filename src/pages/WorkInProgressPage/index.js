@@ -1,2 +1,2 @@
-export { default } from "./WorkInProgressPage";
-export * from "./WorkInProgressPage";
+export { default } from './WorkInProgressPage'
+export * from './WorkInProgressPage'
