@@ -54,12 +54,7 @@ const HomePage: FunctionComponent<RouteComponentProps> = () => {
         </Box>
       </Box>
       <Box center flex={1}>
-        <Button
-          variant="link"
-          href="./resume.pdf"
-          target="_blank"
-          download
-        >
+        <Button variant="link" href="./resume.pdf" target="_blank" download>
           Download my resumé
         </Button>
       </Box>
