@@ -7,13 +7,13 @@ import WorkInProgressPage from './pages/WorkInProgressPage'
 import HomePage from './pages/HomePage'
 
 const ThreeCDN =
-  'https://cdnjs.cloudflare.com/ajax/libs/three.js/r92/three.min.js'
+  'https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js'
 
 const VantaNetCDN =
-  'https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.net.min.js'
+  'https://cdn.jsdelivr.net/gh/tengbao/vanta@latest/dist/vanta.net.min.js'
 
 function loadScript(src: string) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     let script = document.createElement('script')
     script.src = src
     script.addEventListener('load', () => {
